@@ -73,3 +73,8 @@ sensor:
     scan_interval: 120
     resource: http://192.168.178.10:8080/user/var//48/10391/0/11108/2002
     value_template: '{{ value_json.eta.value["@strValue"]}}'
+  - platform: rest
+    name: "ETA Anzahl der automatischen Zündungen"
+    scan_interval: 120
+    resource: http://192.168.178.10:8080/user/var//48/10391/0/0/12018
+    value_template: '{{ value_json.eta.value["@strValue"]}}'
