@@ -105,4 +105,6 @@ sensor:
     resource: http://192.168.178.XXX:8080/user/var//48/10391/0/11108/2002
     value_template: '{{ value_json.eta.value["@strValue"]}}'
 
+Die vollständige Liste wird in der configuration.yaml gepflegt. :-)
+
 # Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
