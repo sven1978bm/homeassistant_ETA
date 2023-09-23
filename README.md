@@ -22,6 +22,21 @@ Jetzt kann die configuration.yaml bearbeitet werden im Editor Dashboard
 
 # Sensoren über den Editor in die configuartion.yaml hinzufügen:
 
+So kann jeder Link (resource) getestet werden:
+
+Link in den Webbrowser eingeben z.B. für den Sensor "ETA Abgas Termperatur"
+
+- http://192.168.178.XXX:8080/user/var//48/10391/0/11110/0 (ACHTUNG IP Adresse anpassen)
+
+Output Webbrowser:
+
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<eta xmlns="http://www.eta.co.at/rest/v1" version="1.0">
+<value advTextOffset="0" unit="°C" uri="/user/var//48/10391/0/11110/0" strValue="22" scaleFactor="10" decPlaces="0">220</value>
+</eta>
+
+Die Einträge in der configuration.yaml:
+
 sensor:
   - platform: rest
     name: "ETA Abgas Temperatur"
