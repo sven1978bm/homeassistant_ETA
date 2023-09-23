@@ -12,7 +12,8 @@ ETA Heizkessel in Home Assistant integrieren:
    - Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
    - installiere den "Config Editor Card" in Frontend
    - Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
-   - Ergänze in der configuration.yaml den Eintrag: config_editor:
+   - Ergänze in der configuration.yaml den Eintrag: "config_editor:"
+     (per SSH bis zum Ordner wo die Datei configuration.yaml liegt, dann sudo nano configuration.yaml)
    - Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
    - Erstelle das "Editor" Dashbaord
    - Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
