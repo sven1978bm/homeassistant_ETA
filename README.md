@@ -9,13 +9,13 @@ ETA Heizkessel in Home Assistant integrieren:
 
 1. HACS installieren (wenn der Editor nicht verfügbar ist)
    - installiere den "Config Editor" in Integrationen
-     # Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
+   - Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
    - installiere den "Config Editor Card" in Frontend
-     # Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
+   - Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
    - Ergänze in der configuration.yaml den Eintrag: config_editor:
-     # Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
+   - Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
    - Erstelle das "Editor" Dashbaord
-     # Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
+   - Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
 
 Jetzt kann die configuration.yaml bearbeitet werden im Editor Dashboard
 
@@ -97,4 +97,3 @@ sensor:
     value_template: '{{ value_json.eta.value["@strValue"]}}'
 
 # Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
-
