@@ -1,19 +1,26 @@
 # ETA
+
 ETA Heizkessel in Home Assistant integrieren:
+
 1. Die ETA Heizung einbinden in das eigene Netzwerk
 2. Teste die Freischaltung von der ETA Rest mit der URL: http://192.168.178.XXX:8080/user/menu (URL von der ETA Heizung)
+
 # Vorbereitung Home Assistant
+
 1. HACS installieren (wenn der Editor nicht verfügbar ist)
    - installiere den "Config Editor" in Integrationen
-     Konfiguration prüfen und Neustart Home Assistant
+     # Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
    - installiere den "Config Editor Card" in Frontend
-     Konfiguration prüfen und Neustart Home Assistant
+     # Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
    - Ergänze in der configuration.yaml den Eintrag: config_editor:
-     Konfiguration prüfen und Neustart Home Assistant
+     # Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
    - Erstelle das "Editor" Dashbaord
-     Konfiguration prüfen und Neustart Home Assistant
+     # Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
+
 Jetzt kann die configuration.yaml bearbeitet werden im Editor Dashboard
+
 # Sensoren über den Editor in die configuartion.yaml hinzufügen:
+
 sensor:
   - platform: rest
     name: "ETA Abgas Temperatur"
@@ -89,5 +96,5 @@ sensor:
     resource: http://192.168.178.XXX:8080/user/var//48/10391/0/11108/2002
     value_template: '{{ value_json.eta.value["@strValue"]}}'
 
-Konfiguration prüfen und Neustart Home Assistant 
+# Neustart Home Assistant, nach fehlerfreier Konfigurations Prüfung
 
